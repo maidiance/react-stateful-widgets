@@ -51,7 +51,8 @@ export default function Moods() {
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: 'crimson', /* STEP 2 */
+    // Make the color of the text be royalblue if the state of the mood is happy, crimson otherwise.
+    color: (mood === happyMood) ? 'royalblue' : 'crimson', /* STEP 2 */
   };
 
   return (
